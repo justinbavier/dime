@@ -1,0 +1,181 @@
+html {
+  width: 100%;
+}
+
+p {
+  color: #fff;
+  font-size: 1.15rem;
+}
+
+.container {
+  width: 100%;
+  min-width: 100%;
+}
+
+.row {
+  width: 100%;
+  margin-left: 0rem !important;
+  margin-right: 0rem !important;
+}
+
+.vertical-spacer {
+  height: 1rem;
+  margin: 0 auto;
+}
+
+.secondary-logo {
+  height: 5rem;
+}
+
+.box {
+  border: 2px solid red;
+  height: 2.5rem;
+}
+/* ================== */
+/* ===== HEADER ===== */
+/* ================== */
+.nav-wrapper {
+  color: black !important;
+}
+
+/* =================== */
+/* ===== LANDING ===== */
+/* =================== */
+.landing-wrapper {
+  background: linear-gradient(to bottom right, #1b9a9e, #38a98b) no-repeat;
+  background-size: 400% 90%;
+
+  animation: AnimationName 15s ease infinite;
+}
+
+@keyframes AnimationName {
+  0%{background-position:0% 0%}
+  50%{background-position:100% 0%}
+  100%{background-position:0% 0%}
+}
+
+@media only screen and (max-width: 1300px) {
+  .landing-wrapper {
+    background-size: 400% 100%;
+  }
+}
+
+.top-spacer {
+  height: 3.5rem;
+}
+
+.primary-logo {
+  height: 10.5rem !important;
+  margin: 0 auto !important;
+}
+
+.pitch-image {
+  height: 7.5rem !important;
+}
+
+.signup-button {
+  background: linear-gradient(to bottom, #2B2F37, #434753);
+  border-radius: .5rem;
+  font-size: 1.25rem;
+}
+
+.login-link {
+  color: #ffffff;
+  font-size: 1.15rem;
+}
+
+.phones {
+  margin-top: 1rem;
+}
+
+.learn-more p {
+  font-size: 1.5rem;
+  margin: 0 auto;
+  color: #000000;
+}
+
+.learn-more p:hover  {
+  text-shadow: 1px 1px 4px grey;
+  transition: text-shadow .25s ease-in-out;
+  cursor: pointer;
+}
+
+.down-arrow {
+  font-size: 2.5rem;
+  color: #000000;
+}
+
+/* =================== */
+/* ===== LOGIN ===== */
+/* =================== */
+.login-wrapper {
+  background: linear-gradient(to bottom right, #1b9a9e, #38a98b);
+  background-size: 400% 100%;
+  height: 100vh !important;
+  animation: AnimationName 15s ease infinite;
+}
+
+.login-card {
+  background: rgba(67, 71, 83, .7);
+  border-radius: .5rem;
+}
+
+.login-greeting {
+  font-size: 2rem;
+}
+
+.login-instructions {
+  font-size: 1.15rem
+}
+
+.login-field {
+  box-sizing: border-box !important;
+  background: white !important;
+  border-radius: .5rem !important;
+  padding-left: .75rem !important;
+  font-size: 1.15rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.login-button {
+  background: linear-gradient(to bottom, #2B2F37, #434753);
+  margin-top: 2.5rem;
+  border-radius: .5rem;
+  font-size: 1.25rem;
+}
+
+/* =================== */
+/* ===== SIGNUP ===== */
+/* =================== */
+.signup-wrapper {
+  background: linear-gradient(to bottom right, #1b9a9e, #38a98b);
+  background-size: 400% 100%;
+  height: 100vh !important;
+  animation: AnimationName 15s ease infinite;
+}
+
+.signup-greeting {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.signup-instructions {
+  font-size: 1.75rem;
+  margin-top: 0rem;
+}
+
+.signup-field {
+  box-sizing: border-box !important;
+  background: white !important;
+  border-radius: .5rem !important;
+  padding-left: .75rem !important;
+  font-size: 1.15rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.signup-button {
+  background: linear-gradient(to bottom, #2B2F37, #434753);
+  margin-top: 2.5rem;
+  border-radius: .5rem;
+  font-size: 1.25rem;
+}
