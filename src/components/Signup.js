@@ -18,7 +18,7 @@ class Signup extends Component {
           </div>
 
           <div className="row">
-            <p className="signup-greeting center-align">{` Signup With The Form Below To Get Started `}</p>
+            <p className="signup-greeting col s10 offset-s1 m12center-align">{` Signup With The Form Below To Get Started `}</p>
             <p className="signup-instructions center-align">{` It's quick and easy. `}</p>
           </div>
 
