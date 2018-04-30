@@ -17,6 +17,8 @@ class Landing extends Component {
     super();
     this.state = {
       autoplay: true,
+      carouselWidth: "50%",
+      cellSpacing: 20,
       initialSlideWidth: 1,
       wrapAround: true
     };
@@ -82,16 +84,41 @@ class Landing extends Component {
               {/*----- END PITCH TEXT ROW -----*/}
 
               {/*----- MOBILE CAROUSEL PITCH GRAPHICS -----*/}
-              <Carousel
-                className="col s4 responsive-img hide-on-med-and-up"
-                autoplay={this.state.autoplay}
-                initialSlideHeight={this.state.initialSlideWidth}
-                wrapAround={this.state.wrapAround}
-              >
-                <img src={discover} />
-                <img src={coin} />
-                <img src={growth} />
-              </Carousel>
+              <div className="row">
+                <Carousel
+                  className="col s6 offset-s3 responsive-img hide-on-med-and-up"
+                  autoplay={this.state.autoplay}
+                  cellSpacing={this.state.cellSpacing}
+                  initialSlideHeight={this.state.initialSlideWidth}
+                  wrapAround={this.state.wrapAround}
+                  width={this.state.carouselWidth}
+                >
+                  <div className="slide">
+                    <img src={discover} />
+                    <p className="center-align">
+                      {`Discover local`}
+                      <br />
+                      {`charities`}
+                    </p>
+                  </div>
+                  <div className="slide">
+                    <img src={coin} />
+                    <p className="center-align">
+                      {`Donate spare`}
+                      <br />
+                      {`change`}
+                    </p>
+                  </div>
+                  <div className="slide">
+                    <img src={growth} />
+                    <p className="center-align">
+                      {`Invest in your`}
+                      <br />
+                      {`community`}
+                    </p>
+                  </div>
+                </Carousel>
+              </div>
               {/*----- END MOBILE CAROUSEL PITCH GRAPHICS -----*/}
 
               {/*----- SIGNUP BUTTON ROW -----*/}

@@ -74,6 +74,7 @@ p {
 }
 
 .signup-button {
+  margin-top: 0rem !important;
   background: linear-gradient(to bottom, #2B2F37, #434753);
   border-radius: .5rem;
   font-size: 1.25rem;
@@ -153,7 +154,7 @@ p {
 /* =================== */
 .signup-wrapper {
   background: linear-gradient(to bottom right, #1b9a9e, #38a98b);
-  background-size: 400% 100%;
+  background-size: 400% 200%;
   height: 100vh !important;
   animation: AnimationName 15s ease infinite;
 }
@@ -177,7 +178,7 @@ p {
   margin-bottom: 0rem !important;
 }
 
-.signup-button {
+.signup-next-button {
   background: linear-gradient(to bottom, #2B2F37, #434753);
   margin-top: 2.5rem;
   border-radius: .5rem;

@@ -36,7 +36,7 @@ class Signup extends Component {
               <div className="input-field col s12 m12">
                 <input className="signup-field" placeholder="Password" id="password" type="password" />
               </div>
-              <button className="signup-button btn-large col s10 offset-s1 m10 offset-m1" type="submit" name="action">
+              <button className="signup-next-button btn-large col s10 offset-s1 m10 offset-m1" type="submit" name="action">
                 Next
               </button>
             </form>
