@@ -2,6 +2,10 @@ html {
   width: 100%;
 }
 
+body {
+  width: 100%;
+}
+
 p {
   color: #fff;
   font-size: 1.15rem;
