@@ -23,6 +23,11 @@ class Landing extends Component {
       wrapAround: true
     };
   }
+
+  handleArrowClick() {
+    alert(` I don't work yet! `);
+  }
+
   render() {
     return (
       <div>
@@ -43,7 +48,11 @@ class Landing extends Component {
             <div className="col s12 m6">
               {/*----- LOGO ROW -----*/}
               <div className="row">
-                <img src={primaryLogo} className="primary-logo col s12 m12" />
+                <img
+                  src={primaryLogo}
+                  className="primary-logo col s12 m12"
+                  alt="primary-logo"
+                />
               </div>
               {/*----- END LOGO ROW -----*/}
 
@@ -54,11 +63,17 @@ class Landing extends Component {
                 <img
                   src={discover}
                   className="pitch-image responsive-img col s4 m4"
+                  alt="discover"
                 />
-                <img src={coin} className="pitch-image responsive-img col s4 m4" />
+                <img
+                  src={coin}
+                  className="pitch-image responsive-img col s4 m4"
+                  alt="coin"
+                />
                 <img
                   src={growth}
                   className="pitch-image responsive-img col s4 m4"
+                  alt="growth"
                 />
               </div>
               {/*----- END PITCH IMAGE ROW -----*/}
@@ -94,7 +109,7 @@ class Landing extends Component {
                   width={this.state.carouselWidth}
                 >
                   <div className="slide">
-                    <img src={discover} />
+                    <img src={discover} alt="discover" />
                     <p className="center-align">
                       {`Discover local`}
                       <br />
@@ -102,7 +117,7 @@ class Landing extends Component {
                     </p>
                   </div>
                   <div className="slide">
-                    <img src={coin} />
+                    <img src={coin} alt="coin" />
                     <p className="center-align">
                       {`Donate spare`}
                       <br />
@@ -110,7 +125,7 @@ class Landing extends Component {
                     </p>
                   </div>
                   <div className="slide">
-                    <img src={growth} />
+                    <img src={growth} alt="growth" />
                     <p className="center-align">
                       {`Invest in your`}
                       <br />
@@ -151,7 +166,11 @@ class Landing extends Component {
             <div className="col m6 hide-on-small-only">
               {/*----- PHONES ROW -----*/}
               <div className="row">
-                <img src={phones} className="phones responsive-img" />
+                <img
+                  src={phones}
+                  className="phones responsive-img"
+                  alt="phones"
+                />
               </div>
               {/*----- END PHONES ROW -----*/}
             </div>
@@ -168,8 +187,10 @@ class Landing extends Component {
             <div className="center-align">
               <div className="row">
                 <a
+                  id="arrow"
                   href="#!"
                   className="learn-more col s6 offset-s3 m2 offset-m5"
+                  onClick={this.handleArrowClick}
                 >
                   <p>{` Learn More `}</p>
                   <FontAwesomeIcon className="down-arrow" icon={downArrow} />

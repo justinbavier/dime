@@ -40,9 +40,69 @@ p {
 /* ===== HEADER ===== */
 /* ================== */
 .nav-wrapper {
+  background: #434753;
   color: black !important;
+  height: 6.5rem !important;
 }
 
+.nav-content-wrapper {
+  max-width: 80%;
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  height: 4.5rem;
+}
+
+.nav-menu-item {
+  margin-top: .6rem;
+}
+
+.nav-menu-item a {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: -.75rem;
+  margin-left: -.075rem;
+}
+
+.nav-menu-item a:hover {
+  background: transparent;
+}
+
+.nav-menu-item a:focus {
+  outline-color: transparent;
+}
+
+.nav-menu-item-border {
+  border: 2px solid white;
+  border-radius: .5rem;
+  height: 3rem;
+}
+
+/* ================== */
+/* ===== FOOTER ===== */
+/* ================== */
+.page-footer {
+  background: #434753;
+  padding-left: 5%;
+  color: white;
+}
+
+.footer-link {
+  font-size: 1.25rem;
+  color: rgba(255,255,255,0.8);
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-copyright {
+}
 /* =================== */
 /* ===== LANDING ===== */
 /* =================== */
@@ -115,9 +175,41 @@ p {
   display: none;
 }
 
-/* =================== */
+/* ====================== */
+/* ===== ONBOARDING ===== */
+/* ====================== */
+.onboarding h1 {
+  padding-top: 1rem;
+  margin-bottom: 0rem;
+  color: #434753;
+}
+
+.onboarding p {
+  color: black;
+  margin-top: 0rem;
+}
+
+.onboarding-cards {
+  margin-top: 1.5%;
+}
+
+.onboarding-card {
+  padding: 1rem;
+  border: 2px solid #434753;
+  border-radius: .5rem;
+  height: 33.33% !important;
+}
+
+.onboarding-title {
+  font-size: 1.5rem;
+}
+
+.onboarding-description {
+  font-size: 1rem;
+}
+/* ================= */
 /* ===== LOGIN ===== */
-/* =================== */
+/* ================= */
 .login-wrapper {
   background: linear-gradient(to bottom right, #1b9a9e, #38a98b);
   background-size: 400% 100%;

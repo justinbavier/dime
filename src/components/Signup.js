@@ -12,7 +12,7 @@ class Signup extends Component {
           <div className="row">
             <div className="col s4 offset-s4 m4 offset-m4 center-align">
               <a href="/">
-                <img src={secondaryLogo} className="secondary-logo"/>
+                <img src={secondaryLogo} className="secondary-logo" alt="secondary-logo"/>
               </a>
             </div>
           </div>

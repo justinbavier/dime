@@ -1,12 +1,12 @@
 // DIME
 import 'materialize-css/dist/css/materialize.min.css';
+import './main.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
+// import { Provider } from 'react-redux';
+// import { createStore, applyMiddleware } from 'redux';
 
-import CSS from './main.css';
 import App from './components/App';
 // import reducers from './reducers';
 
