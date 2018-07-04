@@ -246,9 +246,9 @@ p {
   font-size: 1.25rem;
 }
 
-/* =================== */
+/* ================== */
 /* ===== SIGNUP ===== */
-/* =================== */
+/* ================== */
 .signup-wrapper {
   background: linear-gradient(to bottom right, #1b9a9e, #38a98b);
   background-size: 400% 200%;
@@ -280,4 +280,24 @@ p {
   margin-top: 2.5rem;
   border-radius: .5rem;
   font-size: 1.25rem;
+}
+
+/* ================= */
+/* ===== ABOUT ===== */
+/* ================= */
+.about-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #434753;
+  height: 100vh;
+}
+
+.about-container {
+  min-width: 80% !important;
+}
+
+.about-title {
+  color: white;
 }

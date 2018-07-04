@@ -7,6 +7,8 @@ import Signup from './Signup';
 import Login from './Login';
 import About from './About';
 
+import ResetPasswordPage from './ResetPasswordPage';
+
 const App = () => {
   return (
     <div className="container">
@@ -16,6 +18,7 @@ const App = () => {
           <Route exact path="/signup" component={Signup} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/resetPassword"
         </div>
       </BrowserRouter>
     </div>
