@@ -44,9 +44,6 @@ function validate(values) {
     if (!values[name]) {
       errors[name] = "You must provide a value!";
     }
-    if (values.newPassword !== values.confirmPassword) {
-      errors[name] = "Passwords don't match";
-    }
   });
 
   return errors;

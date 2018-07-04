@@ -9,7 +9,6 @@ class ResetPasswordPage extends Component {
         <div className="container">
           <div className="row">
             <h2 className="center">{` Reset Password `}</h2>
-            <p>`{process.env.REDIRECT}`</p>
           </div>
           <div className="row">
             <div className="card z-depth-0 col l8 offset-l2">
