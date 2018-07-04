@@ -7,6 +7,7 @@
     "@fortawesome/fontawesome-free-brands": "^5.0.12",
     "@fortawesome/fontawesome-free-solid": "^5.0.10",
     "@fortawesome/react-fontawesome": "0.0.18",
+    "axios": "^0.18.0",
     "materialize-css": "^0.100.2",
     "nuka-carousel": "^4.1.0",
     "react": "^16.3.2",
@@ -15,10 +16,12 @@
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.0",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "redux-form": "^7.4.2",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=4000 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
