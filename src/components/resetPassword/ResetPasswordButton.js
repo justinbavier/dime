@@ -7,7 +7,7 @@ const ResetPasswordButton = ({ formValues, resetPassword }) => {
     <div>
       <button
         onClick={() => resetPassword(formValues)}
-        className="green white-text btn-flat left"
+        className="reset-password-submit-button white-text btn-flat left"
       >
         Submit
       </button>

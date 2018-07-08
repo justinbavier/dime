@@ -8,18 +8,17 @@ export const fetchUser = () => async dispatch => {
 };
 
 export const resetPassword = values => async dispatch => {
-  // const redirect = `${process.env.REDIRECT}`;
-  // const res = await axios({
-  //   method: 'post',
-  //   headers: {
-  //     'Access-Control-Allow-Origin': '*',
-  //     'Content-Type':'application/x-www-form-urlencoded',
-  //     'dimekey': 'dime_dev_42069',
-  //   },
-  //   url: "http://localhost:3000/api/users/resetPassword",
-  //   data: values
-  // });
-
+  console.log(values);
+  const redirect = `${process.env.REDIRECT}`;
+  const res = await axios({
+    method: 'post',
+    headers: {
+      'Content-Type':'application/x-www-form-urlencoded',
+      'dimekey': 'dime_dev_42069',
+    },
+    url: "http://localhost:3000/api/users/resetPassword",
+    data: values
+  });
   // console.log(redirect);
   dispatch({ type: FETCH_USER, payload: values })
 };

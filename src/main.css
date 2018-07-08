@@ -305,6 +305,68 @@ p {
 /* ========================== */
 /* ===== RESET PASSWORD ===== */
 /* ========================== */
+#reset-password .container {
+  background: linear-gradient(225deg, #38a98b, #1b9a9e);
+  background-size: 400% 400%;
+
+  -webkit-animation: ResetPasswordBackground 19s ease infinite;
+  -moz-animation: ResetPasswordBackground 19s ease infinite;
+  animation: ResetPasswordBackground 19s ease infinite;
+
+  min-height: 100vh;
+  overflow-y: hidden;
+  padding-top: 2.5rem;
+}
+
+@-webkit-keyframes ResetPasswordBackground {
+    0%{background-position:0% 94%}
+    50%{background-position:100% 7%}
+    100%{background-position:0% 94%}
+}
+@-moz-keyframes ResetPasswordBackground {
+    0%{background-position:0% 94%}
+    50%{background-position:100% 7%}
+    100%{background-position:0% 94%}
+}
+@keyframes ResetPasswordBackground {
+    0%{background-position:0% 94%}
+    50%{background-position:100% 7%}
+    100%{background-position:0% 94%}
+}
+
+#reset-password .reset-password-card {
+  background: rgba(67, 71, 83, .7);
+  border-radius: .5rem;
+}
+
+#reset-password h2 {
+  color: white;
+  font-size: 2.5rem;
+}
+
 #reset-password p {
   color:black;
+}
+
+#reset-password .reset-password-field {
+  box-sizing: border-box !important;
+  background: white !important;
+  border-radius: .5rem !important;
+  padding-left: .75rem !important;
+  font-size: 1.15rem !important;
+  margin-bottom: 0rem !important;
+}
+
+#reset-password .reset-password-submit-button {
+  margin-top: 0rem !important;
+  background: linear-gradient(to bottom, #2B2F37, #434753);
+  border-radius: .5rem;
+  font-size: 1.25rem;
+}
+
+#reset-password .reset-password-cancel-button {
+  margin-top: 0rem !important;
+  background: linear-gradient(to bottom, #d7180e, #f13228);
+  border-radius: .5rem;
+  font-size: 1.25rem;
 }

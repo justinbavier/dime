@@ -27,7 +27,7 @@ class ResetPasswordForm extends Component {
       <div>
         <form onSubmit={this.props.handleSubmit(this.props.onResetPasswordSubmit)}>
           {this.renderFields()}
-          <Link to="/" className="red btn-flat right white-text">
+          <Link to="/" className="reset-password-cancel-button btn-flat right white-text">
             {` Cancel `}
           </Link>
           <ResetPasswordButton />
