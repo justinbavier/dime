@@ -10,14 +10,13 @@ const create = () => {
   })
 
   api.addAsyncRequestTransform(request => async () => {
-    request.headers['dimekey'] = 'dime_dev_42069'
+    request.headers['dimekey'] = process.env.REACT_APP_DIMEKEY
   })
 
   const resetPassword = async (data, resetToken) => {
     const resp = await api.post('/users/resetPassword', { data, resetToken }, {
       applicationJson
     })
-    console.log(resp)
     return resp;
   }
 
