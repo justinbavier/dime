@@ -9,8 +9,6 @@ const create = () => {
     timeout: 10000
   })
 
-  console.log(baseURL);
-
   const resetPassword = async (data, resetToken) => {
     const resp = await api.post('/users/resetPassword', { data, resetToken }, {
       applicationJson
