@@ -6,6 +6,8 @@ import secondaryLogo from '../../images/secondary-logo.svg';
 
 class ResetPasswordPage extends Component {
   render() {
+   const { resetToken } = this.props.match.params;
+   console.log(resetToken)
     return (
       <div id="reset-password">
         <div className="container">
@@ -29,6 +31,7 @@ class ResetPasswordPage extends Component {
                 <div className="col s12">
                   <ResetPasswordForm
                     onResetPasswordSubmit={() => console.log("Login form submitted")}
+                    resetToken={resetToken}
                    />
                  </div>
               </div>
