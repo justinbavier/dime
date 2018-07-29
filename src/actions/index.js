@@ -5,9 +5,11 @@ const applicationJson = { 'Content-Type': 'application/json' }
 
 const create = () => {
   const api = apisauce.create({
-    baseURL: 'http://localhost:3000/api/',
+    baseURL: process.env.REACT_APP_REDIRECT,
     timeout: 10000
   })
+
+  console.log(baseURL);
 
   const resetPassword = async (data, resetToken) => {
     const resp = await api.post('/users/resetPassword', { data, resetToken }, {
@@ -28,8 +30,6 @@ export const fetchUser = () => async dispatch => {
 const api = create();
 
 export const resetPassword = (values, resetToken) => async dispatch => {
-  console.log(resetToken)
   const resp = await api.resetPassword(values, resetToken);
-  console.log(resp, 'resp!')
   dispatch({ type: FETCH_USER, payload: values })
 };
