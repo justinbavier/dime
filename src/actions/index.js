@@ -9,10 +9,15 @@ const create = () => {
     timeout: 10000
   })
 
+  api.addAsyncRequestTransform(request => async () => {
+    request.headers['dimekey'] = 'dime_dev_42069'
+  })
+
   const resetPassword = async (data, resetToken) => {
     const resp = await api.post('/users/resetPassword', { data, resetToken }, {
       applicationJson
     })
+    console.log(resp)
     return resp;
   }
 
