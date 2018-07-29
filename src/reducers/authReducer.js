@@ -8,7 +8,6 @@ export default function(state=null, action) {
       state={
         "this": "state"
       }
-      console.log(state);
       return state;
   }
 }

@@ -23,14 +23,17 @@ class ResetPasswordForm extends Component {
   }
 
   render() {
+    console.log(this.props.resetToken)
     return (
       <div>
         <form onSubmit={this.props.handleSubmit(this.props.onResetPasswordSubmit)}>
           {this.renderFields()}
-          <Link to="/" className="red btn-flat right white-text">
+          <Link to="/" className="reset-password-cancel-button btn-flat right white-text">
             {` Cancel `}
           </Link>
-          <ResetPasswordButton />
+          <ResetPasswordButton 
+            resetToken={this.props.resetToken}
+          />
         </form>
       </div>
     );
